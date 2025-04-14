@@ -4,13 +4,11 @@ package org.example.day7;
         String name;
         int salary;
 
-        // Конструктор с параметрами
         public Employee(String name, int salary) {
             this.name = name;
             this.salary = salary;
         }
 
-        // Конструктор по умолчанию
         public Employee() {
             this("Unnamed", 100_000);
         }
@@ -20,7 +18,6 @@ package org.example.day7;
             System.out.println("Зарплата: " + salary);
         }
     }
-
 
     class Developer extends Employee {
         int linesOfCodePerDay;
@@ -37,7 +34,6 @@ package org.example.day7;
         }
     }
 
-    // Подкласс Manager
     class Manager extends Employee {
         int numberOfMeetingsPerDay;
 
@@ -52,5 +48,6 @@ package org.example.day7;
             System.out.println("Встреч в день: " + numberOfMeetingsPerDay);
         }
     }
+
 
 

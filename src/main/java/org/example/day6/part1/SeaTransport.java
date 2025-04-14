@@ -7,7 +7,7 @@ public class SeaTransport {
         BattleShip battleShip3 = new BattleShip("C",20,30);
         BattleShip battleShip4 = new BattleShip("D",70,60);
         BattleShip battleShip5 = new BattleShip("E",80,70);
-        BattleShip[] arr = new BattleShip[5]{battleShip1,battleShip2,battleShip3,battleShip4,battleShip5};
+      //  BattleShip[] arr = new BattleShip[5]{battleShip1,battleShip2,battleShip3,battleShip4,battleShip5};
 
         System.out.println("Battle Ships: ");
         battleShip1.printInfo();

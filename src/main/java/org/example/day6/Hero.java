@@ -32,7 +32,7 @@ public class Hero {
     public void takeDamage(int amount) {
         this.healthPoints -= amount;
         //System.out.println(name + "получил урон" + amount + ", осталось Здоровья " + this.healthPoints);
-        System.out.println(String.format("%s получил урон %d , осталось Здоровья %d",name,amount,this.healthPoints));
+        System.out.println(String.format("%s получил урон %d , осталось Здоровья %d", name, amount, this.healthPoints));
         if (this.healthPoints <= 0) {
             System.out.println(name + " пал в бою!");
         }
@@ -40,13 +40,13 @@ public class Hero {
 
     public void gainExperiencePoints(int points) {
         this.experiencePoints += points;
-        System.out.println(name + " получил опыт" + points +" Текущий опыт " + this.experiencePoints);
+        System.out.println(name + " получил опыт" + points + " Текущий опыт " + this.experiencePoints);
         checkLevelUp();
     }
 
     private void checkLevelUp() {
         if (this.experiencePoints > this.level * 1000) {
-            level ++;
+            level++;
             System.out.println(name + " Повысил уровень! Новый уровень " + level);
         }
     }
@@ -58,6 +58,7 @@ public class Hero {
             gainExperiencePoints(monster.getExperience());
         }
     }
+}
      class Monster {
         private int damage;
         private int experience;
@@ -86,7 +87,8 @@ public class Hero {
 //                ", experiencePoints=" + experiencePoints +
 //                '}';
 //    }
-}
+
+
 
 
 
