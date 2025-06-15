@@ -7,6 +7,6 @@ public class Electronics extends Product {
 
     @Override
     public void printDeliveryInfo() {
-        System.out.println("Упаковано в тонну пупырки, картона и пенопласта");
+        System.out.println(name + "Упаковано в тонну пупырки, картона и пенопласта");
     }
 }

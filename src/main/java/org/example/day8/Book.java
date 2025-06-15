@@ -7,6 +7,6 @@ public class Book extends Product {
 
     @Override
     public void printDeliveryInfo() {
-        System.out.println("Доставляется в картонном конверте");
+        System.out.println(name + "Доставляется в картонном конверте");
     }
 }

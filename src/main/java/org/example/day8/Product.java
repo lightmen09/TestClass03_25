@@ -1,10 +1,10 @@
 package org.example.day8;
 
 public abstract class Product {
-    private String name;
-    private double price;
+     String name;
+     double price;
 
-    public Product(String productName, double price) {
+    public Product(String name, double price) {
         this.name = name;
         this.price = price;
     }
